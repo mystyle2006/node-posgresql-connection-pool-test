@@ -1,2 +1,26 @@
 # node-posgresql-connection-pool-test
-This project is sample code for a blog post that explains the importance of a connection pool.
+- nodejs: 16
+- express: 4.x
+- pg: 8.x
+
+# Run
+Run docker first,
+```
+docker-compose up -d
+
+```
+
+Run express server,
+```
+npm run start
+
+```
+
+# Test
+```
+ab -n 100 -c 20 http://localhost:3000/test-timeout/
+```
+
+
+
+
