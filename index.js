@@ -9,7 +9,8 @@ const client = new pg.Pool({
     user: 'test',
     password: 'test',
     database: 'test',
-    port: 5432,
+    port: 5433,
+    connectionTimeoutMillis: 10000,
     max: 5,
 })
 
